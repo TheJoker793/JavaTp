@@ -14,6 +14,9 @@ public class TestVoiture {
 		v1.Vitesse=50;
 		v1.afficher();
 		System.out.println("Vitesse moyenne = " + Voiture.moyenneVitesseVoiture());
+		// Pas de changement de la vitesse moyenne car NombreTotalVoiture et NombreTotalVitesse sont des attributs statiques 
+		// et ne se changent que lors de la création d'un objet (au niveau de constructeur
+		// il faut une méthode qui permet de changer la vitesse moyenne lors du changement de vitesse d'une voiture
 
 
 		
