@@ -20,7 +20,11 @@ public class CompteBancaire {
 	}
 	
 	void retirer(double solde) {
-		this.Solde-=solde;
+		if (solde>=this.Solde) {
+			this.Solde-=solde;
+
+		}
+		System.out.println("désolé!! votre solde est insuffisant");
 	}
 	void afficher() {
 		System.out.println("le client "+Titulaire+" ayant le compte numero "+Numero+" a "+Solde);
